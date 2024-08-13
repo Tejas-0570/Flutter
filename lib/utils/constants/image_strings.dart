@@ -22,6 +22,7 @@ class MyImages{
   static const String deliveredInPlaneIllustration = "";
   static const String deliveredEmailIllustration = "assets/images/animations/Email_verifiaction.png";
   static const String verifyIllustration = "";
+  static const String passwordReset = "assets/images/animations/password_reset_image.png";
 
 
 }

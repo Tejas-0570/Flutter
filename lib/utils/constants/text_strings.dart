@@ -37,6 +37,8 @@ class MyText{
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
+  static const String submit = "Submit";
+  static const String done = "Done";
 
 
   //Authentication heading
@@ -45,9 +47,9 @@ class MyText{
   static const String loginSubTitle = "Discover Limitless Choices & Unmatched Convenience";
   static const String signUpTitle = "Let's create your account";
   static const String forgetTitlePassword = "Forget Password";
-  static const String forgetSubTitlePassword = "";
-  static const String changeYourPasswordTitle = "Password reset Email sent";
-  static const String changeYourPasswordSubTitle = "";
+  static const String forgetSubTitlePassword = "Enter your registered email address to receive a link to reset your password and regain access to your account.";
+  static const String changeYourPasswordTitle = "Password Reset Email Sent";
+  static const String changeYourPasswordSubTitle = "Your Account Security is Our Priority We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected";
   static const String confirmEmail = "Verify your email address";
   static const String confirmEmailSubTitle = "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers";
   static const String emailNotReceivedMessage = "";
