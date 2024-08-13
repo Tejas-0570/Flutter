@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/features/authentication/screens/password_configuration/forget_password.dart';
+import 'package:mad_project/navigation_menu.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -65,7 +66,7 @@ class MyLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const NavigationMenu()),
                     child: const Text(MyText.signIn))),
             const SizedBox(height: MySizes.spaceBtwItem),
 
