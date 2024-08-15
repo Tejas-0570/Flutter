@@ -4,7 +4,7 @@ class MyColor{
   MyColor._();
   //App UI color
   static const Color primaryColor = Color(0xFF1B7F91);
-  static const Color secondaryColor = Color(0xFF1B7F91);
+  static const Color secondaryColor = Color(0xFF006E65);
   static const Color accent = Color(0xFF1B7F91);
 
   //text color
