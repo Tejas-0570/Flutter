@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mad_project/common/widgets/appbar/appbar.dart';
 import 'package:mad_project/features/shop/screens/home/widgets/home_appbar.dart';
 import '../../../../common/widgets/custom_shapes/container/primary_header_container.dart';
-import '../../../../common/widgets/product_cart/cart_menu_icon.dart';
-import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/text_strings.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
