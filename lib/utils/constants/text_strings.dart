@@ -12,8 +12,8 @@ class MyText{
   static const String onBoardingSubTitle3 = "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery";
 
   //Home Titles
-  static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Tejas Waydande";
+  static const String homeAppbarTitle = "Welcome to Aura";
+  static const String homeAppbarSubTitle = "Shop the Best Products";
 
 
   //Authentication form text
@@ -56,4 +56,5 @@ class MyText{
   static const String yourAccountCreatedTitle = "Your account successfully created";
   static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created. Unleash the Joy of Seamless Online Shopping";
   static const String myContinue = "Continue";
+
 }
