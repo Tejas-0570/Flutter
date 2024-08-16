@@ -25,4 +25,11 @@ class MyImages{
   static const String passwordReset = "assets/images/animations/password_reset_image.png";
 
 
+  //Category Icons
+  static const String toyIcon = "assets/icons/categories/toy-train_7731898.png";
+  static const String shoeIcon = "assets/icons/categories/sport-shoe_12338763.png";
+  static const String cosmeticIcon = "assets/icons/categories/lipstick_10115196.png";
+  static const String clothIcon = "assets/icons/categories/cloth-hanger_11989843.png";
+
+
 }
