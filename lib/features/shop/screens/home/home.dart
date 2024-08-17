@@ -1,10 +1,15 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:mad_project/common/widgets/custom_shapes/container/circular_container.dart';
 import 'package:mad_project/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:mad_project/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:mad_project/features/shop/screens/home/widgets/promo_slider.dart';
+import '../../../../common/widgets/banner_image/rounded_image.dart';
 import '../../../../common/widgets/custom_shapes/container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/container/search_bar_container.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -47,10 +52,22 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            //Body of Home page
+            Padding(
+              padding: EdgeInsets.all(MySizes.defaultSpace),
+              child: MyPromoSlider(
+                banners: [
+                  MyImages.banner1,
+                  MyImages.banner2,
+                  MyImages.banner3,
+                  MyImages.banner4,
+                ],
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
-

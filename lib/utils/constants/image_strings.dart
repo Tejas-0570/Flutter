@@ -31,5 +31,12 @@ class MyImages{
   static const String cosmeticIcon = "assets/icons/categories/lipstick_10115196.png";
   static const String clothIcon = "assets/icons/categories/cloth-hanger_11989843.png";
 
+  //Banner
+  static const String banner1 = "assets/images/Banner/banner1.jpg";
+  static const String banner2 = "assets/images/Banner/banner2.png";
+  static const String banner3 = "assets/images/Banner/banner3.jpg";
+  static const String banner4 = "assets/images/Banner/banner4.png";
+
+
 
 }
