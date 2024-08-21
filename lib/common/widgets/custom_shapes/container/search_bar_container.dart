@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/device/device_utility.dart';
+import '../../../../utils/helpers/helper_functions.dart';
 
 class MySearchContainer extends StatelessWidget {
   const MySearchContainer({
@@ -13,26 +14,27 @@ class MySearchContainer extends StatelessWidget {
     this.showBackground = true,
     this.showBorder = true,
     this.onTap,
+    this.padding = const EdgeInsets.symmetric(horizontal: MySizes.defaultSpace),
   });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
-    // final dark = MyHelperFunction.isDarkMode(context);
+    final dark = MyHelperFunction.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: MySizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: MyDeviceUtility.getScreenWidth(context),
           padding: const EdgeInsets.all(MySizes.md),
           decoration: BoxDecoration(
-            // color: showBackground ? dark ? MyColor.dark : MyColor.light : Colors.transparent,
-            color: MyColor.white,
+            color: showBackground ? dark ? MyColor.dark : MyColor.light : Colors.transparent,
             borderRadius: BorderRadius.circular(MySizes.borderRadiusLg),
             border: showBorder ? Border.all(color: Colors.grey) : null,
           ),

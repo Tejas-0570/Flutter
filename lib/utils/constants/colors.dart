@@ -6,6 +6,7 @@ class MyColor{
   static const Color primaryColor = Color(0xFF1B7F91);
   static const Color secondaryColor = Color(0xFF006E65);
   static const Color accent = Color(0xFF1B7F91);
+  static const Color discount = Colors.yellow;
 
   //text color
   static const Color textPrimary = Color(0xFF222222);
@@ -13,8 +14,8 @@ class MyColor{
   static const Color textWhite = Colors.white;
 
   //Background color
-  static const Color light = Color(0xFF1B7F91);
-  static const Color dark = Color(0xFF1B7F91);
+  static const Color light = Color(0xFFF4F4F4);
+  static const Color dark = Color(0xFF252525);
   static const Color primaryBackground = Color(0xFF1B7F91);
 
   //Button color

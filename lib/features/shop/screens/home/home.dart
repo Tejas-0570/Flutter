@@ -1,9 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mad_project/common/widgets/product_cart/product_card_vertical.dart';
 import 'package:mad_project/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:mad_project/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:mad_project/features/shop/screens/home/widgets/promo_slider.dart';
 import '../../../../common/widgets/custom_shapes/container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/container/search_bar_container.dart';
+import '../../../../common/widgets/layouts/grid_layout.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
@@ -14,11 +17,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            MyPrimaryHeaderContainer(
+            const MyPrimaryHeaderContainer(
               child: Column(
                 children: [
                   //Appbar
@@ -52,13 +55,26 @@ class HomeScreen extends StatelessWidget {
 
             //Body of Home page
             Padding(
-              padding: EdgeInsets.all(MySizes.defaultSpace),
-              child: MyPromoSlider(
-                banners: [
-                  MyImages.banner1,
-                  MyImages.banner2,
-                  MyImages.banner3,
-                  MyImages.banner4,
+              padding: const EdgeInsets.all(MySizes.defaultSpace),
+              child: Column(
+                children: [
+                  const MyPromoSlider(
+                    banners: [
+                      MyImages.banner1,
+                      MyImages.banner2,
+                      MyImages.banner3,
+                      MyImages.banner4,
+                    ],
+                  ),
+                  const SizedBox(height: MySizes.spaceBtwSection),
+
+                  const MySectionHeading(title: 'Popular Products'),
+                  const SizedBox(height: MySizes.spaceBtwItem),
+
+
+                  MyGridLayout(itemCount: 2, itemBuilder: (_, index) => const MyProductCardVertical()),
+
+
                 ],
               ),
             )
@@ -68,3 +84,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+

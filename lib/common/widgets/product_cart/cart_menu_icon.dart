@@ -7,11 +7,11 @@ import '../../../utils/constants/colors.dart';
 class MyCartCounterIcon extends StatelessWidget {
   const MyCartCounterIcon({
     super.key,
-    required this.iconColor,
+    this.iconColor,
     required this.onPressed,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
   @override
