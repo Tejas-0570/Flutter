@@ -37,6 +37,7 @@ class MyCircularContainer extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
         color: backgroundColor,
+        border: showBorder ? Border.all(color: borderColor, width: 2) : null,
       ),
       child: child,
     );

@@ -10,6 +10,8 @@ import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../styles/shadow_style.dart';
 import '../icons/wishlist_icon.dart';
+import '../texts/brand_title_text.dart';
+import '../texts/brand_title_text_with_verified_icon.dart';
 import '../texts/product_title_text.dart';
 
 class MyProductCardVertical extends StatelessWidget {
@@ -70,25 +72,15 @@ class MyProductCardVertical extends StatelessWidget {
               ),
             ),
             const SizedBox(height: MySizes.spaceBtwItem / 2),
-            Padding(
-              padding: const EdgeInsets.only(left: MySizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: MySizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const MyProductTitleText(
+                  MyProductTitleText(
                       title: 'Nike Air Shoes', smallSize: true),
-                  const SizedBox(height: MySizes.spaceBtwItem / 2),
-                  Row(
-                    children: [
-                      Text('Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium),
-                      const SizedBox(width: MySizes.xs),
-                      const Icon(Iconsax.verify5,
-                          color: MyColor.primaryColor, size: MySizes.iconXs),
-                    ],
-                  ),
+                  SizedBox(height: MySizes.spaceBtwItem / 2),
+                  BrandTitleText(title: 'Nike'),
 
                 ],
               ),
