@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:mad_project/features/personalization/screens/settings/settings.dart';
 import 'package:mad_project/features/shop/screens/store/store.dart';
+import 'package:mad_project/features/shop/screens/wishlist/wishlist.dart';
 import 'package:mad_project/utils/constants/colors.dart';
 import 'package:mad_project/utils/helpers/helper_functions.dart';
 
@@ -27,7 +29,7 @@ class NavigationMenu extends StatelessWidget {
 
           destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
-            NavigationDestination(icon: Icon(Iconsax.shop), label: 'Shop'),
+            NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
             NavigationDestination(icon: Icon(Iconsax.heart), label: 'Wishlist'),
             NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
           ],
@@ -46,7 +48,7 @@ class NavigationController extends GetxController {
   final screens = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(color: Colors.orange),
-    Container(color: Colors.blue),
+    const WishListScreen(),
+    const SettingsScreen(),
   ];
 }

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mad_project/common/widgets/product_cart/product_card_vertical.dart';
 import 'package:mad_project/features/shop/screens/home/widgets/home_appbar.dart';
@@ -49,6 +48,7 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                        SizedBox(height: MySizes.spaceBtwSection),
                 ],
               ),
             ),

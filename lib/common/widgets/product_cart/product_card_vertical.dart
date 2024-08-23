@@ -73,16 +73,20 @@ class MyProductCardVertical extends StatelessWidget {
             ),
             const SizedBox(height: MySizes.spaceBtwItem / 2),
             const Padding(
-              padding: EdgeInsets.only(left: MySizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  MyProductTitleText(
-                      title: 'Nike Air Shoes', smallSize: true),
-                  SizedBox(height: MySizes.spaceBtwItem / 2),
-                  BrandTitleText(title: 'Nike'),
+              padding: EdgeInsets.symmetric(horizontal: MySizes.sm),
+              //Only reason to use SizedBox is to make column full width when product title text is large
+              child: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    MyProductTitleText(
+                        title: 'Nike Air Shoes', smallSize: true),
+                    SizedBox(height: MySizes.spaceBtwItem / 2),
+                    BrandTitleTextWithVerifiedIcon(title: 'Nike'),
 
-                ],
+                  ],
+                ),
               ),
             ),
 

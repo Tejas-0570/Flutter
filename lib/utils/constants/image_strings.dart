@@ -5,6 +5,8 @@ class MyImages{
   //App Logo
   static const String darkAppLogo = "assets/logos/Aura_LightMode-removebg-preview.png";
   static const String lightAppLogo = "assets/logos/Aura_DarkMode-removebg-preview.png";
+  static const String nikeLogoBlack = "assets/logos/NikeLogo_Black.png";
+  static const String nikeLogoWhite = "assets/logos/NikeLogo_White.png";
 
   //Social Logo
   static const String google = "assets/logos/google-removebg-preview.png";
@@ -39,10 +41,10 @@ class MyImages{
 
   //Product Images
   static const String productImage1 = "assets/images/products/shoe.png";
-  static const String productImage2 = "assets/images/products/shoe1.jpg";
-  static const String productImage3 = "assets/images/products/shoe2.jpg";
-  static const String productImage4 = "assets/images/products/shoe3.jpg";
-  static const String productImage5 = "assets/images/products/shoe4.jpg";
+  static const String productImage2 = "assets/images/products/shoe1.png";
+  static const String productImage3 = "assets/images/products/shoe2.png";
+  static const String productImage4 = "assets/images/products/shoe3.png";
+  static const String productImage5 = "assets/images/products/shoe4.png";
   static const String productImage6 = "";
   static const String productImage7 = "";
   static const String productImage8 = "";
