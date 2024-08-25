@@ -7,7 +7,6 @@ import 'custom_theme/chip_theme.dart';
 import 'custom_theme/elevated_button_theme.dart';
 import 'custom_theme/outlined_button_theme.dart';
 import 'custom_theme/text_field_theme.dart';
-import 'custom_theme/text_theme.dart';
 
  class MyAppTheme{
    MyAppTheme._();

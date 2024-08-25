@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/common/widgets.login_signup/form_divider.dart';
 import 'package:mad_project/common/widgets.login_signup/social_button.dart';
 import 'package:mad_project/features/authentication/screens/signup_widgets/signup_form.dart';
-import 'package:mad_project/utils/constants/colors.dart';
 import 'package:mad_project/utils/constants/sizes.dart';
-import 'package:mad_project/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/text_strings.dart';
 

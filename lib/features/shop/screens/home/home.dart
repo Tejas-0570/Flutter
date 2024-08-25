@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         MySectionHeading(
                           title: 'Popular Categories',
-                          showActionButton: false,
+                          showActionButton: true,
                           textColor: MyColor.white,
                         ),
                         SizedBox(height: MySizes.spaceBtwItem),

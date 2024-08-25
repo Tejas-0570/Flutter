@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/features/personalization/screens/settings/settings.dart';
 import 'package:mad_project/features/shop/screens/store/store.dart';

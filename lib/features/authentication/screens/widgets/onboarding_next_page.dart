@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/features/authentication/controllers/onboarding_controller.dart';
 

@@ -10,7 +10,6 @@ import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../styles/shadow_style.dart';
 import '../icons/wishlist_icon.dart';
-import '../texts/brand_title_text.dart';
 import '../texts/brand_title_text_with_verified_icon.dart';
 import '../texts/product_title_text.dart';
 

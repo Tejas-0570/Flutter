@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mad_project/common/widgets/appbar/appbar.dart';
 import 'package:mad_project/common/widgets/appbar/tabbar.dart';
-import 'package:mad_project/common/widgets/custom_shapes/container/circular_container.dart';
 import 'package:mad_project/common/widgets/custom_shapes/container/search_bar_container.dart';
 import 'package:mad_project/common/widgets/layouts/grid_layout.dart';
 import 'package:mad_project/common/widgets/product_cart/cart_menu_icon.dart';
 import 'package:mad_project/common/widgets/texts/section_heading.dart';
 import 'package:mad_project/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:mad_project/utils/helpers/helper_functions.dart';
-import '../../../../common/widgets/brands/brand_show_case.dart';
 import '../../../../common/widgets/product_cart/brand_card.dart';
 import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class StoreScreen extends StatelessWidget {

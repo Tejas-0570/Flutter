@@ -12,6 +12,9 @@ class MyImages{
   static const String google = "assets/logos/google-removebg-preview.png";
   static const String facebook = "assets/logos/facebook.png";
 
+  //User
+  static const String userImage = "assets/images/user/user_image.png";
+
   //OnBoarding Images
   static const String onBoardingImage1 = "assets/images/on_boarding_images/search-engine-concept-illustration.png";
   static const String onBoardingImage2 = "assets/images/on_boarding_images/credit-card-payment-concept-illustration.png";
