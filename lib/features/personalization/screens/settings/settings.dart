@@ -8,6 +8,9 @@ import 'package:mad_project/common/widgets/texts/section_heading.dart';
 import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
+import 'package:get/get.dart';
+
+import '../profile/profile.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -30,7 +33,7 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   //User Profile Screen
-                  const MyUserProfileTile(),
+                  MyUserProfileTile(onPressed: () => Get.to(() => const ProfileScreen())),
                   const SizedBox(height: MySizes.spaceBtwSection),
                 ],
               ),

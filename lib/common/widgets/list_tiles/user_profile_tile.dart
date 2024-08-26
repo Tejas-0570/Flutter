@@ -8,8 +8,10 @@ import '../images/circular_image.dart';
 
 class MyUserProfileTile extends StatelessWidget {
   const MyUserProfileTile({
-    super.key,
+    super.key, required this.onPressed,
   });
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class MyUserProfileTile extends StatelessWidget {
       ),
       title: Text('Tejas Waydande', style: Theme.of(context).textTheme.headlineSmall!.apply(color: MyColor.white)),
       subtitle: Text('tejaswaydande@gmail.com', style: Theme.of(context).textTheme.bodyMedium!.apply(color: MyColor.white)),
-      trailing: IconButton(onPressed: (){}, icon: const Icon(Iconsax.edit, color: MyColor.white)),
+      trailing: IconButton(onPressed: onPressed, icon: const Icon(Iconsax.edit, color: MyColor.white)),
     );
   }
 }
