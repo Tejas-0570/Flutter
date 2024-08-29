@@ -21,7 +21,7 @@ class WishListScreen extends StatelessWidget {
             .textTheme
             .headlineMedium),
         actions: [
-          MyWishlistIcon(
+          MyCircularIcon(
               icon: Iconsax.add, onPressed: () => Get.to(const HomeScreen())),
         ],
       ),

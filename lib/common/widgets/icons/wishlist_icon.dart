@@ -4,7 +4,7 @@ import 'package:mad_project/utils/helpers/helper_functions.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 
-class MyWishlistIcon extends StatelessWidget {
+class MyCircularIcon extends StatelessWidget {
   // A custom circular icon widget with a background color
 
   //properties are
@@ -13,7 +13,7 @@ class MyWishlistIcon extends StatelessWidget {
   ///
   ///
   /// Icons [size], [color], [onPressed]
-  const MyWishlistIcon({
+  const MyCircularIcon({
     super.key,
     this.width,
     this.height,

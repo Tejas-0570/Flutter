@@ -21,6 +21,8 @@ class MyHelperFunction {
       return Colors.black;
     } else if (value == 'White') {
       return Colors.white;
+    } else if (value == 'Yellow') {
+      return Colors.yellow;
     } else{
       return null;
     }

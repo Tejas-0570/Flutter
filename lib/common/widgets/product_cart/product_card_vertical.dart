@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/common/widgets/custom_shapes/container/circular_container.dart';
 import 'package:mad_project/common/widgets/custom_shapes/container/rounded_image.dart';
 import 'package:mad_project/common/widgets/product_cart/product_pricr_text.dart';
+import 'package:mad_project/features/shop/screens/product_details/product_details.dart';
 import 'package:mad_project/utils/helpers/helper_functions.dart';
 
 import '../../../utils/constants/colors.dart';
@@ -20,7 +22,7 @@ class MyProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = MyHelperFunction.isDarkMode(context);
     return GestureDetector(
-      onTap: (){},
+      onTap: () => Get.to(() => const ProductDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -63,7 +65,7 @@ class MyProductCardVertical extends StatelessWidget {
                   const Positioned(
                       top: 0,
                       right: 0,
-                      child: MyWishlistIcon(
+                      child: MyCircularIcon(
                         icon: Iconsax.heart5,
                         color: Colors.red,
                       )),
