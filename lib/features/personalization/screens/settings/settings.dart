@@ -4,6 +4,7 @@ import 'package:mad_project/common/widgets/appbar/appbar.dart';
 import 'package:mad_project/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:mad_project/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:mad_project/common/widgets/texts/section_heading.dart';
+import 'package:mad_project/features/personalization/screens/address/widgets/address.dart';
 
 import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
 import '../../../../utils/constants/colors.dart';
@@ -50,10 +51,12 @@ class SettingsScreen extends StatelessWidget {
                       title: 'Account Settings', showActionButton: false),
                   const SizedBox(height: MySizes.spaceBtwItem),
 
-                  const MySettingsMenuTile(
+                  MySettingsMenuTile(
                       icon: Iconsax.safe_home,
                       title: 'My Address',
-                      subTitle: 'Set your address'),
+                      subTitle: 'Set your address',
+                      onTap: () => Get.to(() => const UserAddressScreen()),
+                  ),
                   const MySettingsMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',

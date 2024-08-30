@@ -48,7 +48,7 @@ class MyColor{
   static const Color darkGrey = Color(0xFF434343);
   static const Color grey = Color(0xFF7A7A7A);
   static const Color softGrey = Color(0xFFF4F4F4);
-  static const Color lightGrey = Color(0xFFF9F9F9);
+  static const Color lightGrey = Color(0xFFCFCFCF);
   static const Color white = Color(0xFFFFFFFF);
 
 

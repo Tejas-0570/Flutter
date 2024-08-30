@@ -21,7 +21,7 @@ class MyHomeAppBar extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headlineMedium!
-                  .apply(color: MyColor.grey)),
+                  .apply(color: MyColor.white)),
           Text(MyText.homeAppbarSubTitle,
               style: Theme.of(context)
                   .textTheme

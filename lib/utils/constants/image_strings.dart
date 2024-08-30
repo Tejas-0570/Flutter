@@ -15,6 +15,11 @@ class MyImages{
   //User
   static const String userImage = "assets/images/user/user_image.png";
 
+  //Review User
+  static const String reviewUser1 = "assets/review/ReviewUser1.png";
+  static const String reviewUser2 = "assets/review/ReviewUser2.png";
+  static const String reviewUser3 = "assets/review/ReviewUser3.png";
+
   //OnBoarding Images
   static const String onBoardingImage1 = "assets/images/on_boarding_images/search-engine-concept-illustration.png";
   static const String onBoardingImage2 = "assets/images/on_boarding_images/credit-card-payment-concept-illustration.png";

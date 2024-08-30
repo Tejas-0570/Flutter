@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/common/widgets/texts/section_heading.dart';
 import 'package:mad_project/features/shop/screens/product_details/product_attributes.dart';
 import 'package:mad_project/features/shop/screens/product_details/product_detail_image_slider.dart';
 import 'package:mad_project/features/shop/screens/product_details/product_meta_data.dart';
 import 'package:mad_project/features/shop/screens/product_details/rating_share_widgets.dart';
+import 'package:mad_project/features/shop/screens/product_review/product_review.dart';
 import 'package:readmore/readmore.dart';
 import '../../../../utils/constants/sizes.dart';
 import 'bottom_add_to_cart.dart';
@@ -65,7 +67,7 @@ class ProductDetails extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       MySectionHeading(title: 'Review(99)', showActionButton: false, onPressed: (){}),
-                      IconButton(icon: const Icon(Iconsax.arrow_right_3), onPressed: (){} )
+                      IconButton(icon: const Icon(Iconsax.arrow_right_3), onPressed: () => Get.to(() => const ProductReviewScreen()) ),
                     ],
                   ),
                   const SizedBox(height: MySizes.spaceBtwItem),

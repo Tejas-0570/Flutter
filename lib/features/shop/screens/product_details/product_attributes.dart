@@ -18,7 +18,7 @@ class MyProductAttributes extends StatelessWidget {
     return Column(
       children: [
         MyCircularContainer(
-          backgroundColor: dark ? MyColor.darkGrey : MyColor.grey,
+          backgroundColor: dark ? MyColor.darkGrey : MyColor.lightGrey,
           padding: const EdgeInsets.all(MySizes.md),
           child: Column(
             children: [
