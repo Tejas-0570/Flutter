@@ -22,24 +22,24 @@ class ProductDetails extends StatelessWidget {
         child: Column(
           children: [
             ///Product Image
-            MyProductImageSlider(),
+            const MyProductImageSlider(),
 
             /// Product Details
             Padding(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                     right: MySizes.defaultSpace,
                     left: MySizes.defaultSpace,
                     bottom: MySizes.defaultSpace),
               child: Column(
                 children: [
                   ///Rating & Share Button
-                  MyRatingAndShare(),
+                  const MyRatingAndShare(),
 
                   ///Price, Title, Stock, Brands
-                  MyProductMetaData(),
+                  const MyProductMetaData(),
 
                   ///Attribute
-                  MyProductAttributes(),
+                  const MyProductAttributes(),
                   const SizedBox(height: MySizes.spaceBtwSection),
 
                   ///Checkout Button
