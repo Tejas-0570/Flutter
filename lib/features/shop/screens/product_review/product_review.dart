@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/common/widgets/appbar/appbar.dart';
 import 'package:mad_project/features/shop/screens/product_review/user_review_card.dart';
-import 'package:mad_project/features/shop/screens/product_review/rating_progress_indicator.dart';
-import 'package:mad_project/utils/device/device_utility.dart';
 
 import '../../../../common/widgets/rating/custom_rating_bar.dart';
-import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import 'overall_rating_indicator.dart';
 
@@ -38,7 +33,7 @@ class ProductReviewScreen extends StatelessWidget {
 
 
               ///User Review List
-              UserReviewCard(),
+              const UserReviewCard(),
 
 
 

@@ -1,15 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:mad_project/common/widgets/appbar/appbar.dart';
-import 'package:mad_project/common/widgets/custom_shapes/container/rounded_image.dart';
-import 'package:mad_project/common/widgets/icons/wishlist_icon.dart';
 import 'package:mad_project/common/widgets/product_cart/product_pricr_text.dart';
-import 'package:mad_project/common/widgets/texts/brand_title_text_with_verified_icon.dart';
-import 'package:mad_project/common/widgets/texts/product_title_text.dart';
-import 'package:mad_project/utils/helpers/helper_functions.dart';
 
-import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 import 'add_remove_button.dart';
 import 'cart_item.dart';
