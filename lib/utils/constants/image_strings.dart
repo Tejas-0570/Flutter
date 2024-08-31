@@ -15,6 +15,17 @@ class MyImages{
   //User
   static const String userImage = "assets/images/user/user_image.png";
 
+
+  //Payment Method
+  static const String applePay = "assets/icons/payment_method/apple-pay.png";
+  static const String googlePay = "assets/icons/payment_method/google-pay.png";
+  static const String paypal = "assets/icons/payment_method/paypal.png";
+  static const String visa = "assets/icons/payment_method/visa.png";
+  static const String masterCard = "assets/icons/payment_method/master-card.png";
+  // static const String applePay = "";
+  // static const String applePay = "";
+  static const String paymentSuccess = "assets/icons/payment_method/payment-success.png";
+
   //Review User
   static const String reviewUser1 = "assets/review/ReviewUser1.png";
   static const String reviewUser2 = "assets/review/ReviewUser2.png";

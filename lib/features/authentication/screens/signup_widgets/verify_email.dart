@@ -17,36 +17,55 @@ class VerifyEmailScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
-          IconButton(onPressed: () => Get.offAll(() => const LoginScreen()), icon: const Icon(CupertinoIcons.clear))
+          IconButton(
+              onPressed: () => Get.offAll(() => const LoginScreen()),
+              icon: const Icon(CupertinoIcons.clear))
         ],
       ),
-      body: SingleChildScrollView( // This function is used when device screen is small then our code adjust according to device size
+      body: SingleChildScrollView(
+        // This function is used when device screen is small then our code adjust according to device size
         child: Padding(
           padding: const EdgeInsets.all(MySizes.defaultSpace),
           child: Column(
             children: [
               //Image
-              const Image(image: AssetImage(MyImages.deliveredEmailIllustration)),
+              const Image(
+                  image: AssetImage(MyImages.deliveredEmailIllustration)),
               const SizedBox(height: MySizes.spaceBtwSection),
 
               //Title & Subtitle
-              Text(MyText.confirmEmail, style: Theme.of(context).textTheme.headlineMedium, textAlign: TextAlign.center),
+              Text(MyText.confirmEmail,
+                  style: Theme.of(context).textTheme.headlineMedium,
+                  textAlign: TextAlign.center),
               const SizedBox(height: MySizes.spaceBtwItem),
-              Text('support@aura.com', style: Theme.of(context).textTheme.labelLarge, textAlign: TextAlign.center),
+              Text('support@aura.com',
+                  style: Theme.of(context).textTheme.labelLarge,
+                  textAlign: TextAlign.center),
               const SizedBox(height: MySizes.spaceBtwItem),
-              Text(MyText.confirmEmailSubTitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),
+              Text(MyText.confirmEmailSubTitle,
+                  style: Theme.of(context).textTheme.labelMedium,
+                  textAlign: TextAlign.center),
               const SizedBox(height: MySizes.spaceBtwSection),
 
               //Button
-              SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => const SuccessScreen()), child: const Text(MyText.myContinue))),
+              SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                      onPressed: () => Get.to(() => SuccessScreen(
+                            image: MyImages.staticSuccessIllustration,
+                            title: MyText.yourAccountCreatedTitle,
+                            subTitle: MyText.yourAccountCreatedSubTitle,
+                            onPressed: () => Get.to(() => const LoginScreen()),
+                          )),
+                      child: const Text(MyText.myContinue))),
               const SizedBox(height: MySizes.spaceBtwItem),
-              SizedBox(width: double.infinity, child: TextButton(onPressed: (){}, child: const Text(MyText.resendEmail))),
+              SizedBox(
+                  width: double.infinity,
+                  child: TextButton(
+                      onPressed: () {}, child: const Text(MyText.resendEmail))),
               const SizedBox(height: MySizes.spaceBtwItem),
-
             ],
-
           ),
-
         ),
       ),
     );

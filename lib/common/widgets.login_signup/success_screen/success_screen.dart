@@ -3,39 +3,40 @@ import 'package:get/get.dart';
 import 'package:mad_project/common/styles/spacing_styles.dart';
 import 'package:mad_project/features/authentication/screens/login/login.dart';
 import 'package:mad_project/utils/constants/image_strings.dart';
+import 'package:mad_project/utils/helpers/helper_functions.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/constants/text_strings.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen(
-      {super.key,});
+      {super.key, required this.image, required this.title, required this.subTitle, required this.onPressed,});
+
+  final String image, title, subTitle;
+  final VoidCallback onPressed;
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: MySpacingStyle.paddingWithAppBarHeight,
+          padding: MySpacingStyle.paddingWithAppBarHeight * 2,
           child: Column(
             children: [
-              const Image(image: AssetImage(MyImages.staticSuccessIllustration)),
+              Image(image: AssetImage(image), width: MyHelperFunction.screenWidth() * 0.6),
               const SizedBox(height: MySizes.spaceBtwSection),
 
               //Title & Subtitle
-              Text(MyText.yourAccountCreatedTitle,
-                  style: Theme.of(context).textTheme.headlineMedium,
-                  textAlign: TextAlign.center),
+              Text(title, style: Theme.of(context).textTheme.headlineMedium, textAlign: TextAlign.center),
               const SizedBox(height: MySizes.spaceBtwItem),
-              Text(MyText.yourAccountCreatedSubTitle,
-                  style: Theme.of(context).textTheme.labelMedium,
-                  textAlign: TextAlign.center),
+              Text(subTitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),
               const SizedBox(height: MySizes.spaceBtwSection),
 
               //Button
               SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: () => Get.to(() => const LoginScreen()),
+                      onPressed: onPressed,
                       child: const Text(MyText.myContinue))),
             ],
           ),

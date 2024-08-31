@@ -1,43 +1,43 @@
-
-
-class MyPricingCalculator{
-  // calculate price based on tax and shipping
-  static double calculateTotalPrice(double productPrice, String location){
-    //double taxRate = getTaxRateForLocation(location);
-   // double texAmount = productPrice * taxRate;
-
-    //double shippingCost = getShippingCost(location);
-
-    //double totalPrice = productPrice * taxAmount * shippingCost;
-    return 0;//totalPrice;
-  }
-
-  //calculate shipping cost
-  // static String calculateShippingCost(double productPrice, String location){
-  //   double shippingCost = getShippingCost(location);
-  //   return shippingCost.toStringAsFixed(2);
-  // }
-
-
-  // calculate tax
-  static String calculateTax(double productPrice, String location){
+class MyPricingCalculator {
+  /// Calculate price based on tax and shipping
+  static double calculateTotalPrice(double productPrice, String location) {
     double taxRate = getTaxRateForLocation(location);
     double taxAmount = productPrice * taxRate;
-    return taxAmount.toStringAsFixed(2);
+
+    double shippingCost = getShippingCost(location);
+
+    /// calculate total price
+    double totalPrice = productPrice + taxAmount + shippingCost;
+    return totalPrice;
   }
 
-  static double getTaxRateForLocation(String location){
-    //calculate after adding API
-    return 5.00;//for Example
+  /// Calculate and return shipping cost
+  static double calculateShippingCost(double productPrice, String location) {
+    double shippingCost = getShippingCost(location);
+    return shippingCost;
   }
 
-  // sum all cart values and return total amount
-  // static double calculateCartTotal(CartModel cart){
+  /// Calculate and return tax
+  static double calculateTax(double productPrice, String location) {
+    double taxRate = getTaxRateForLocation(location);
+    double taxAmount = productPrice * taxRate;
+    return taxAmount;
+  }
+
+  // Get tax rate based on location (This should be replaced with API call)
+  static double getTaxRateForLocation(String location) {
+    // Placeholder value, adjust as needed
+    return 0.05;
+  }
+
+  // Get shipping cost based on location (This should be replaced with API call)
+  static double getShippingCost(String location) {
+    // Placeholder value, adjust as needed
+    return 10.00;
+  }
+
+  // Sum all cart values and return total amount
+  // static double calculateCartTotal(CartModel cart) {
   //   return cart.items.map((e) => e.price).fold(0, (previousPrice, currentPrice) => previousPrice + (currentPrice ?? 0));
   // }
-
-
-
-
-
 }
