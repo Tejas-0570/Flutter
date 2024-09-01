@@ -5,12 +5,12 @@ import 'package:mad_project/common/widgets/custom_shapes/container/primary_heade
 import 'package:mad_project/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:mad_project/common/widgets/texts/section_heading.dart';
 import 'package:mad_project/features/personalization/screens/address/widgets/address.dart';
-
+import 'package:mad_project/features/shop/screens/cart/cart.dart';
+import 'package:mad_project/features/shop/screens/order/order.dart';
 import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import 'package:get/get.dart';
-
 import '../profile/profile.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -26,11 +26,7 @@ class SettingsScreen extends StatelessWidget {
               child: Column(
                 children: [
                   MyAppBar(
-                    title: Text('Account',
-                        style: Theme.of(context)
-                            .textTheme
-                            .headlineMedium!
-                            .apply(color: MyColor.white)),
+                    title: Text('Account', style: Theme.of(context).textTheme.headlineMedium!.apply(color: MyColor.white)),
                   ),
 
                   //User Profile Screen
@@ -57,14 +53,18 @@ class SettingsScreen extends StatelessWidget {
                       subTitle: 'Set your address',
                       onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
-                  const MySettingsMenuTile(
+                  MySettingsMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',
-                      subTitle: 'Add, remove products and move to checkout'),
-                  const MySettingsMenuTile(
+                      subTitle: 'Add, remove products and move to checkout',
+                      onTap: () => Get.to(() => const CartScreen()),
+                  ),
+                  MySettingsMenuTile(
                       icon: Iconsax.bag_tick,
                       title: 'My Orders',
-                      subTitle: 'In Progress and Completed'),
+                      subTitle: 'In Progress and Completed',
+                      onTap: () => Get.to(() => const OrderScreen()),
+                  ),
                   const MySettingsMenuTile(
                       icon: Iconsax.bank,
                       title: 'Bank Account',

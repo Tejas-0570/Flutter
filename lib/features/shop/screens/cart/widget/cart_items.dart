@@ -16,7 +16,7 @@ class MyCartItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
-      itemCount: 2,
+      itemCount: 1,
       separatorBuilder: (_, __) => const SizedBox(height: MySizes.spaceBtwSection),
       itemBuilder: (_, index) =>
         Column(
