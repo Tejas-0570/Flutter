@@ -9,7 +9,6 @@ import 'package:mad_project/utils/helpers/helper_functions.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
-import '../../styles/shadow_style.dart';
 import '../icons/wishlist_icon.dart';
 
 class MyProductCardHorizontal extends StatelessWidget {
