@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mad_project/common/widgets/appbar/appbar.dart';
 import 'package:mad_project/common/widgets/custom_shapes/container/rounded_image.dart';
-import 'package:mad_project/common/widgets/product_cart/Product_card_horizontal.dart';
+import 'package:mad_project/common/widgets/product_cart/product_card_horizontal.dart';
 import 'package:mad_project/common/widgets/texts/section_heading.dart';
 
 import '../../../../utils/constants/image_strings.dart';

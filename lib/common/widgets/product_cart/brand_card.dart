@@ -24,7 +24,7 @@ class MyBrandCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = MyHelperFunction.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: MyCircularContainer(
         padding: const EdgeInsets.all(MySizes.sm),
         showBorder: showBorder,

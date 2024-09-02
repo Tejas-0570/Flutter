@@ -5,11 +5,13 @@ import 'package:mad_project/common/widgets/custom_shapes/container/search_bar_co
 import 'package:mad_project/common/widgets/layouts/grid_layout.dart';
 import 'package:mad_project/common/widgets/product_cart/cart_menu_icon.dart';
 import 'package:mad_project/common/widgets/texts/section_heading.dart';
+import 'package:mad_project/features/shop/screens/all_brands/all_brands.dart';
 import 'package:mad_project/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:mad_project/utils/helpers/helper_functions.dart';
 import '../../../../common/widgets/product_cart/brand_card.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -53,7 +55,8 @@ class StoreScreen extends StatelessWidget {
 
                       /// --Featured Brands
                       MySectionHeading(
-                          title: 'Featured Brands', onPressed: () {}),
+                          title: 'Featured Brands', onPressed: () => Get.to(() => const AllBrands())
+                      ),
                       const SizedBox(height: MySizes.spaceBtwItem),
 
                       MyGridLayout(
