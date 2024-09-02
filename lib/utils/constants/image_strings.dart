@@ -58,17 +58,27 @@ class MyImages{
   static const String banner3 = "assets/images/Banner/banner3.jpg";
   static const String banner4 = "assets/images/Banner/banner4.png";
 
-  //Product Images
-  static const String productImage1 = "assets/images/products/shoe.png";
-  static const String productImage2 = "assets/images/products/shoe1.png";
-  static const String productImage3 = "assets/images/products/shoe2.png";
-  static const String productImage4 = "assets/images/products/shoe3.png";
-  static const String productImage5 = "assets/images/products/shoe4.png";
-  static const String productImage6 = "";
-  static const String productImage7 = "";
-  static const String productImage8 = "";
-  static const String productImage9 = "";
-  static const String productImage10 = "";
+  ///--------------------------- Product Images ----------------------
+
+
+  //Shoe Images
+  static const String shoeImage = "assets/images/products/shoes/shoe.png";
+  static const String shoeImage1 = "assets/images/products/shoes/shoe1.png";
+  static const String shoeImage2 = "assets/images/products/shoes/shoe2.png";
+  static const String shoeImage3 = "assets/images/products/shoes/shoe3.jpg";
+  static const String shoeImage4 = "assets/images/products/shoes/shoe4.png";
+  static const String shoeImage5 = "assets/images/products/shoes/shoe5.png";
+  static const String shoeImage6 = "assets/images/products/shoes/shoe6.jpg";
+  static const String shoeImage7 = "assets/images/products/shoes/shoe7.jpg";
+  static const String shoeImage8 = "assets/images/products/shoes/shoe8.jpg";
+  static const String shoeImage9 = "assets/images/products/shoes/shoe9.jpg";
+
+  //Sport-T-Shirt Images
+  static const String sportTShirtImage1 = "assets/images/products/sports_t_shirt/Sport-T-Shirt-1.jpg";
+  static const String sportTShirtImage2 = "assets/images/products/sports_t_shirt/Sport-T-Shirt-2.jpg";
+  static const String sportTShirtImage3 = "assets/images/products/sports_t_shirt/Sport-T-Shirt-3.jpg";
+  static const String sportTShirtImage4 = "assets/images/products/sports_t_shirt/Sport-T-Shirt-4.jpg";
+  static const String sportTShirtImage5 = "assets/images/products/sports_t_shirt/Sport-T-Shirt-5.jpg";
   static const String productImage11 = "";
   static const String productImage12 = "";
   static const String productImage13 = "";

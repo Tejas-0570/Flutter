@@ -54,7 +54,7 @@ class MyOrderListItems extends StatelessWidget {
                   child: Row(
                     children: [
                       ///Icon
-                      const Icon(Iconsax.ship),
+                      const Icon(Iconsax.tag),
                       const SizedBox(width: MySizes.spaceBtwItem / 2),
 
                       ///Status & Date

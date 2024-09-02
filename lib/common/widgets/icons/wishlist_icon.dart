@@ -40,8 +40,8 @@ class MyCircularIcon extends StatelessWidget {
         color: backgroundColor !=null
             ? backgroundColor!
             : MyHelperFunction.isDarkMode(context)
-          ? MyColor.black.withOpacity(0.9)
-            : MyColor.white.withOpacity(0.9),
+          ? MyColor.black.withOpacity(0.2)
+            : MyColor.white.withOpacity(0.2),
 
       ),
       child: IconButton(onPressed: () {}, icon: Icon(icon , color: color, size: size)),

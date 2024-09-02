@@ -41,7 +41,7 @@ class MyProductCardVertical extends StatelessWidget {
                 children: [
                   //Main Thumbnail Image
                   const MyRoundedImage(
-                      imageUrl: MyImages.productImage4, applyImageRadius: true),
+                      imageUrl: MyImages.shoeImage3, applyImageRadius: true),
 
                   //Sale Tag or Discount
                   Positioned(

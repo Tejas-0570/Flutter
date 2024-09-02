@@ -31,7 +31,7 @@ class MyProductImageSlider extends StatelessWidget {
                 padding: EdgeInsets.all(MySizes.productImageRadius * 2),
                 child: Center(
                   child:
-                  Image(image: AssetImage(MyImages.productImage4)),
+                  Image(image: AssetImage(MyImages.shoeImage3)),
                 ),
               ),
             ),
@@ -50,7 +50,7 @@ class MyProductImageSlider extends StatelessWidget {
                   physics: const AlwaysScrollableScrollPhysics(),
                   separatorBuilder: (_, __) => const SizedBox(width: MySizes.spaceBtwItem),
                   itemBuilder: (_, index) => MyRoundedImage(
-                    imageUrl: MyImages.productImage3,
+                    imageUrl: MyImages.shoeImage3,
                     padding: const EdgeInsets.all(MySizes.sm),
                     width: 80,
                     backgroundColor: dark ? MyColor.dark : MyColor.white,

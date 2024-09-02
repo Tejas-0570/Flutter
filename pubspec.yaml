@@ -75,6 +75,8 @@ flutter:
     - assets/images/user/
     - assets/review/
     - assets/icons/payment_method/
+    - assets/images/products/shoes/
+    - assets/images/products/sports_t_shirt/
 
 
   #fonts:

@@ -19,7 +19,7 @@ class MyCartItem extends StatelessWidget {
       children: [
 
         ///Image
-        MyRoundedImage(imageUrl: MyImages.productImage4,
+        MyRoundedImage(imageUrl: MyImages.shoeImage4,
           width: 60,
           height: 60,
           padding: const EdgeInsets.all(MySizes.sm),

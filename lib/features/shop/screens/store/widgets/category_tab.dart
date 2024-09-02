@@ -23,16 +23,16 @@ class MyCategoryTab extends StatelessWidget {
               //Brands
               const MyBrandShowCase(
                 images: [
-                  MyImages.productImage1,
-                  MyImages.productImage2,
-                  MyImages.productImage3,
+                  MyImages.shoeImage1,
+                  MyImages.shoeImage2,
+                  MyImages.shoeImage3,
                 ],
               ),
               const MyBrandShowCase(
                 images: [
-                  MyImages.productImage1,
-                  MyImages.productImage2,
-                  MyImages.productImage3,
+                  MyImages.shoeImage1,
+                  MyImages.shoeImage2,
+                  MyImages.shoeImage3,
                 ],
               ),
               const SizedBox(height: MySizes.spaceBtwItem),
